@@ -1,0 +1,183 @@
+/* 共通部分
+------------------------------- */
+@charset "UTF-8";  
+
+html {
+    font-size: 100%;   
+}
+
+
+
+
+/* body */
+body {
+    font-family: sans-serif;
+    line-height: 1.7;  
+    color: #000;
+}   
+
+.wrapper {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 .5rem;
+}
+
+.align-center {
+    text-align: center;
+}    
+
+.align-center a {
+    color: #fff;;
+}
+
+.align-center a:hover {
+    color: #0bd;
+}
+
+a {
+    text-decoration: none;
+}  
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+} 
+
+.main-nav a {
+    color: #fff;
+}
+
+.main-nav a:hover {
+    color: #0bd;
+}
+
+.page-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+} 
+
+.font-english {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: normal;
+}
+
+
+
+
+
+/* footer */
+.page-footer {
+    background-image: url(../images/footer.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1.5rem;
+    margin-top: 8rem;
+
+}  
+
+.page-footer p {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: .75rem;
+} 
+
+
+
+
+/* オリジナルbody */
+.cover {
+    background-size: cover;
+    height: 900px;   
+    background-position: center bottom; 
+}
+
+.cover-home {
+    background-image: url(../images/logo.png);
+}
+
+.page-header {
+    padding-top: .5rem;   /* 携帯でみてナビゲーションシステム余白十分か確認*/
+}   
+
+.about {
+    max-width: 736px;
+    padding: 0 1.5rem;
+    margin: 3rem auto 0;
+}
+
+.heading-large {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    margin-bottom: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #0bd;
+    color: #fff;
+    border-radius: 8px;
+    padding: .75rem 1.5rem;
+    transition: .5s;
+} 
+
+.btn:hover {
+    background-color: #0090aa;
+    scale: 1.2;
+} 
+
+.btn-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+
+
+
+/* デスクトップbody */
+@media (min-width: 800px) {
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+    }
+
+    .main-nav {
+        font-size: 1.5rem; 
+    } 
+    
+    .page-title {
+        font-size: 5rem;
+    }
+
+    .page-footer {
+        background-image: url(../images/footer.png);
+        padding-top: 1.5rem;
+    }  
+    
+    
+    
+    
+    /* オリジナル */
+    .cover-home {
+        background-image: url(../images/logo.png);
+    } 
+
+    .about {
+        margin: 4rem auto 0;
+    }
+
+    .heading-large {
+        font-size: 4rem;
+    }
+}

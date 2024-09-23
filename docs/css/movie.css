@@ -1,0 +1,167 @@
+/* 共通部分
+------------------------------- */
+@charset "UTF-8";   
+
+html {
+    font-size: 100%;   
+}
+
+
+
+
+/* boby */
+body{
+    font-family: sans-serif;
+    line-height: 1.7;
+    color: #000;
+}  
+
+.sub-cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 528px;
+    margin-bottom: 4rem;
+}
+
+.page-header {
+    padding-top: .5rem;  
+} 
+
+.wrapper {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 .5rem;
+} 
+
+.align-center {
+    text-align: center;
+}    
+
+.align-center a {
+    color: #fff;
+}
+
+.align-center a:hover {
+    color: #0bd;;
+}
+
+a {
+    text-decoration: none;
+}  
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+} 
+
+.main-nav a {
+    color: #fff;
+}
+
+.main-nav a:hover {
+    color: #0bd;
+}
+
+.page-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.font-english {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: normal;
+}  
+
+.post {
+    margin-bottom: 3rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}  
+
+.post-title {
+    font-weight: normal;
+    margin-bottom: 1.25rem;
+}
+
+.post p {
+    margin-bottom: 6rem;
+    line-height: 2;
+}
+
+
+
+
+/* footer */
+.page-footer {
+    background-image: url(../images/footer.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1.5rem;
+    margin-top: 8rem;
+}  
+
+.page-footer p {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: .75rem;
+} 
+
+
+
+
+/* オリジナルboby */
+.cover-movie {
+    background-image: url(../images/movie.jpg);
+}
+
+.wrapper-cover {
+    background-image: url(../images/movie-b.png);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+
+
+
+/* デスクトップbody */
+@media (min-width: 800px) {
+    .sub-cover {
+        height: 400px;
+        margin-bottom: 6rem;
+    }
+
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+    } 
+
+    .main-nav {
+        font-size: 1.5rem;
+    } 
+
+    .page-title {
+        font-size: 5rem;
+    }
+    
+    .post-title {
+        font-size: 2rem;
+    }
+
+    .page-footer {
+        background-image: url(../images/footer.png);
+        padding-top: 1.5rem;
+    } 
+
+
+
+
+/* オリジナル */
+    .cover-movie {
+        background-image: url(../images/movie.jpg);
+    }   
+}

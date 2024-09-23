@@ -1,0 +1,235 @@
+/* 共通部分
+------------------------------- */
+@charset "UTF-8";  
+
+html {
+    font-size: 100%;   
+}
+
+/* body */
+body {
+    font-family: sans-serif;
+    line-height: 1.7;  
+    color: #000;
+}   
+a {
+    text-decoration: none;
+}  
+.align-center {
+    text-align: center;
+} 
+.page-header {
+    padding-top: .5rem;   /* 一番上のmy hobbyについて上の余白が増えた*/
+}   
+.font-english {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: normal;
+} 
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    list-style: none;
+} 
+
+.main-nav a {
+    color: #fff;
+}
+
+.main-nav a:hover {
+    color: #0bd;
+}
+.page-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10rem; 
+    line-height: 1.4; /* 真ん中あたりのタイトル私の趣味について上の余白が増えた*/
+} 
+.cover { 
+    background-size: cover;
+    background-position: center bottom;
+    height: 700px; /* 背景写真の大きさが変化*/
+}
+.cover-home {
+    background-image: url(../images/logo.png);
+}
+.about {
+    max-width: 736px;   /* デスクトップの場合に文章が広がらないように*/
+    padding: 0 1.5rem;
+    margin: 10rem auto 4rem; /* aboutクラスの私の趣味紹介の位置が変わる*/
+}
+.about p {
+    margin-bottom: 3rem;
+}
+.heading-large {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;/* aboutクラスの私の趣味紹介の位置が変わる*/
+}
+.btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #0bd;
+    color: #fff;
+    border-radius: 8px;
+    padding: .75rem 1.5rem;
+    transition: .5s;
+} 
+.btn:hover {
+    background-color: #0090aa;
+    scale: 1.2;
+} 
+.align-center a {
+    color: #fff;;
+}
+.align-center a:hover {
+    color: #0bd;
+}
+.btn-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    list-style: none;
+}
+.page-footer {
+    background-image: url(../images/footer.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1.5rem;
+    margin-top: 8rem;
+
+}  
+.page-footer p {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: .75rem;
+} 
+
+
+/* オリジナルbobdy ----tennis */
+.sub-cover {
+    background-size: cover;
+    background-position: center bottom;
+    height: 700px;
+    margin-bottom: 4rem;
+}
+.cover-tennis {
+    background-image: url(../images/Tennis.jpg);
+}
+.post {
+    margin-bottom: 2rem;
+}  
+.post-title {
+    margin-bottom: 1.25rem;
+    padding: 0 1.5rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+.post p {
+    margin-bottom: 6rem;
+    line-height: 2;
+    text-align: justify;
+    padding: 0 2.5rem;
+}
+
+
+/* オリジナルboby ----movie*/
+.cover-movie {
+    background-image: url(../images/movie.jpg);
+}
+
+
+
+@media (min-width: 800px) {
+    .page-title {
+        font-size: 4rem;
+    }
+    .heading-large {
+        font-size: 4rem;
+    }
+    .main-nav {
+        font-size: 2rem; 
+    } 
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+    .about {
+        margin: 4rem auto 0;
+    } 
+    
+
+
+    /* オリジナルbobdy ----tennis */
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto 2rem;
+        padding: 0 .5rem; 
+    }
+    .post-title {
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+        text-align: center;
+    }
+    .post p {
+        margin-bottom: 6rem;
+        line-height: 2;
+        text-align: justify;
+        padding: 0 13rem; 
+    }
+}
+
+@media (min-height: 1200px) {
+    .cover { 
+        background-size: cover;
+        background-position: center bottom;
+        height: 1000px; /* 背景写真の大きさが変化*/
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .wrapper-image {
+        background-image: url(../images/Tennis-b.png);
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    /* オリジナルmovie  */
+    .wrapper-cover {
+        background-image: url(../images/movie-b.png);
+        background-size: cover;
+        background-position: center bottom;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+   
+      
